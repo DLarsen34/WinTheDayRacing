@@ -3,22 +3,59 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="src/index.js"></script>
+        <script src="https://kit.fontawesome.com/56071c1e08.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="src/styles.css" />
         <title>Win The Day Racing</title>
     </head>
     <body> 
-        <header>
-            <h1>Win The Day </br>Racing</h1>
-        </header>
+        <nav>
+            <div class= "filler"></div>
+            <header>
+                <h1>Win The Day </br>Racing</h1>
+            </header>
+            <ul class="nav-bar" id = "nav-list">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "src/pages/mares.html">Brood Mares</a></li>
+                <li><a href = "#">Race Bred Horses</a></li>
+            </ul>
+        </nav>
         <div class="main-container">
             <div class="pictures">
-                <img src="src/images/horse1.jfif" alt="Horse 1"></img>
-                <h3 class="horse-name">Kono (ID)</h3>
-                <img src="src/images/horse1.jfif" alt="Horse 1"></img>
-                <h3 class="horse-name">Italian Princess (ID)</h3>
-                <img src="src/images/horse1.jfif" alt="Horse 1"></img>
-                <h3 class="horse-name">Coko (UT)</h3>
+                    <img id="kono" src="src/images/horse1.jfif" alt="Kono (ID)"></img>
+                    <h3 class="horse-name">Kono (ID)</h3>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+
+                    <img id="italianPrincess" src="src/images/horse1.jfif" alt="Italian Princess (ID)"></img>
+                    <h3 class="horse-name">Italian Princess (ID)</h3>
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
+
+                    <img id="coko" src="src/images/horse1.jfif" alt="Coko (UT)"></img>
+                    <h3 class="horse-name">Coko (UT)</h3>
+                     <!-- The Modal -->
+                     <div id="myModal" class="modal">
+                        <!-- The Close Button -->
+                        <span class="close">&times;</span>
+                        <!-- Modal Content (The Image) -->
+                        <img class="modal-content" id="img01">
+                        <!-- Modal Caption (Image Text) -->
+                        <div id="caption"></div>
+                    </div>
             </div>
             <div class="companyInfo">
                 <p class="page-info">Win the Day Racing founed by life long horse owner and trainer Matt Larsen and his wife Promise Larsen in 2019. Win the Day Racing located in Honeyville, Utah has 
@@ -43,14 +80,15 @@
                 </p>
             </div>
             <div class="pictures">
-                <img src="src/images/horse1.jfif" alt="Horse 1"></img>
+                <img id="pendelton" src="src/images/horse1.jfif" alt="Pendelton (UT)"></img>
                 <h3 class="horse-name">Pendelton (UT)</h3>
-                <img src="src/images/horse1.jfif" alt="Horse 1"></img>
+                <img id="italianWaves" src="src/images/horse1.jfif" alt="Italian Waves (UT)"></img>
                 <h3 class="horse-name">Italian Waves (UT)</h3>
-                <img src="src/images/horse1.jfif" alt="Horse 1"></img>
+                <img id="slamDiego" src="src/images/horse1.jfif" alt="Slam Diego (UT)"></img>
                 <h3 class="horse-name">Slam Diego (UT)</h3>
             </div>
         </div>
         <footer> <small>&copy; Copyright <script>document.write(new Date().getFullYear());</script>, Win The Day Racing</small> </footer>   
+        <script src="src/index.js"></script>
     </body>
 </html>
