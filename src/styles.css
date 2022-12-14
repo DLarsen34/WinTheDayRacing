@@ -15,6 +15,11 @@ header {
     background-color: #c49c67;
 }
 
+.mare-Nav, .mare-Header, 
+.raceHorse-Nav, .raceHorse-Header {
+    background-color: #D2B48C;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -97,8 +102,16 @@ li {
     font-size: 20px;
 }
 
-li a:hover {
+a:visited {
+    color: blue;
+}
+
+a:hover {
     color: black;
+}
+
+a.active {
+    color: #678fc4;
 }
 
 .content {
@@ -114,14 +127,6 @@ img {
     padding-top: 8px;
 }
 
-.horse-1 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: auto;
-}
-
 .horse-2 {
     display: flex;
     flex-direction: column;
@@ -130,16 +135,8 @@ img {
     width: auto;
     border-style: solid;
     border-radius: 10px;
-    border-color: #B38445
-}
-
-.horse-3 {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: auto;
-   
+    border-color: #B38445;
+    margin-bottom: 25px;
 }
 
 .horse-name {
