@@ -43,6 +43,7 @@ nav {
 
 .nav-bar li>a {
     text-decoration: none;
+    font-weight: 1000;
 }
 
 h1 {
@@ -102,8 +103,12 @@ li {
     font-size: 20px;
 }
 
+a {
+    color: brown;
+}
+
 a:visited {
-    color: blue;
+    color: darkolivegreen;
 }
 
 a:hover {
@@ -111,7 +116,7 @@ a:hover {
 }
 
 a.active {
-    color: #678fc4;
+    color: #362312;
 }
 
 .content {
@@ -137,6 +142,7 @@ img {
     border-radius: 10px;
     border-color: #B38445;
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 
 .horse-name {
