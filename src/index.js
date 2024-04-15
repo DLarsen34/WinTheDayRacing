@@ -19,8 +19,8 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-//---------------Italian Princess-----------------
-var img = document.getElementById("italianPrincess");
+//---------------Pendelton-----------------
+var img = document.getElementById("pendelton");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -55,8 +55,8 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-//---------------Pendelton-----------------
-var img = document.getElementById("pendelton");
+//---------------Konos Gone Rogue-----------------
+var img = document.getElementById("bambam");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){
@@ -73,8 +73,8 @@ span.onclick = function() {
   modal.style.display = "none";
 }
 
-//---------------Itilian Waves-----------------
-var img = document.getElementById("italianWaves");
+//---------------Coko Pebbles-----------------
+var img = document.getElementById("pebbles");
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 img.onclick = function(){

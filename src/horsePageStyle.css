@@ -106,6 +106,17 @@ li {
 a {
     color: brown;
 }
+h4 a {
+    color: brown;
+}
+
+h4 a:visited {
+    color: #8a3324;
+}
+
+h4 a:hover {
+    color: black;
+}
 
 a:visited {
     color: darkolivegreen;
@@ -167,8 +178,8 @@ img {
     font-size: 22px;
 }
 
-#kono, #pendelton, #coko, #bambam, 
-#pebbles, #slamDiego {
+#kono, #italianPrincess, #coko,
+#pendelton, #italianWaves, #slamDiego {
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
@@ -251,8 +262,15 @@ img {
         <h2>Mares</h2></br>
 }*/
 
+.divider {
+    color: #D2B48C;
+    height: 50px;
+    width: 100%;
+}
+
 footer {
     position: relative;
+    top: 100%;
     width: 100%;
     text-align: center;
 }
