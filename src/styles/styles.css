@@ -6,6 +6,7 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
 }
 .filler {
     width: 25%;
@@ -49,7 +50,7 @@ nav {
 h1 {
     text-align: center;
     font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 h2 {
@@ -147,6 +148,7 @@ img {
 
 .horse-name {
     margin-top: 8px;
+    font-size: 22px;
 }
 
 .horse-info {
@@ -167,8 +169,8 @@ img {
     font-size: 22px;
 }
 
-#kono, #pendelton, #coko, #bambam, 
-#pebbles, #slamDiego {
+#kono, #pendelton, #coko, #konosGoneRogue, 
+#cokoPebbles, #slamDiego {
     border-radius: 5px;
     cursor: pointer;
     transition: .3s;
@@ -186,7 +188,6 @@ img {
     overflow: auto; /*Enable scroll if needed*/
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,.9);
-
 }
 
 /*Modal Content (Image)*/
@@ -237,19 +238,26 @@ img {
     text-decoration: none;
     cursor: pointer;
   }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
+
+  .kono, .pendelton, .coko,
+  .konosGoneRogue, .cokoPebbles, .slamDiego {
+    height: 300px;
+    width: 400px;
   }
 
-/*@media (max-width: 800px) {
-    .content{
-        flex-direction: column;
-        <h2>Mares</h2></br>
-}*/
+@media (max-width: 768px) {
+    img {
+        display: none;
+    }
+
+    .horse-name {
+        display: none;
+    }
+
+    .nav-bar {
+        
+    }
+}
 
 footer {
     position: relative;

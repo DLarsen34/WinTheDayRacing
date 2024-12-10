@@ -4,42 +4,81 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/56071c1e08.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="../horsePageStyle.css" />
+        <link rel="stylesheet" href="../styles/horsePageStyle.css" />
         <title>Win The Day Racing Mares</title>
     </head>
     <body>
         <nav class="mare-Nav">
             <div class= "filler"></div>
-            <header class="mare-Header">
-                <h1>Win The Day </br>Racing</h1>
-            </header>
             <ul class="nav-bar" id = "nav-list">
                 <li><a href = "../../index.html">Home</a></li>
                 <li><a href = "mares.html" class="active">Brood Mares</a></li>
-                <li><a href = "raceHorses.html">Race Bred Horses</a></li>
+                <li><a href = "raceHorses.html">Racing Age</a></li>
+                <li><a href = "yearlingsAndWeanlings.html">Yearlings & Weanlings</a></li>
             </ul>
         </nav>
+        <header class="mare-Header">
+            <h1>Brood Mares</h1>
+        </header>
         <div class="content">
             <div class="horse-2">
-                <img src="../images/horse1.jfif" alt="Pendelton"></img>
-                <h4 class="horse-name"><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10797031&registry=Q" target="_blank">Pendelton (UT)</a></h4><br>
-                <p class="horse-info">Kono was foaled on April 10th, 2014 to Italian Princess by way of Dashair.
-                    In 22 starts she had 5 wins, 3 seconds, and 3 thirds. Amassing <strong>$34,296</strong> in winnings </p>
-            </div>
-            <div class="horse-2">
-                <img src="../images/horse1.jfif" alt="Kono"></img>
-                <h4 class="horse-name"><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9813206&registry=Q&rbt=QH" target="_blank">Kono (ID)</a></h4><br>
-                <p class="horse-info">Kono was foaled on April 10th, 2014 to Italian Princess by way of Dashair.
-                    In 22 starts she had 5 wins, 3 seconds, and 3 thirds. Amassing <strong>$34,296</strong> in winnings </p>
-            </div>
-            <div class="horse-2">
-                <img src="../images/horse1.jfif" alt="Coko"></img>
+                <img src="../images/Coko.jpg" alt="Coko (UT)" class="coko" id="coko"></img>
                 <h4 class="horse-name"><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10685639&registry=Q" target="_blank">Coko (UT)</a></h4><br>
-                <p class="horse-info">Kono was foaled on April 10th, 2014 to Italian Princess by way of Dashair.
-                    In 22 starts she had 5 wins, 3 seconds, and 3 thirds. Amassing <strong>$34,296</strong> in winnings </p>
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+                <p class="horse-info">Utah bred Mare by Sixes Royal out of Italian Princess by Blushing Bug.<br><br> She unfortunatly sustained an injury to her ankle when she was 2 months old and was 
+                    not able to race.<br><br>
+                    She is a full sister to <a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9316881&registry=Q" target="_blank">Shootin Sixes</a>
+                </p>
+            </div>
+            <div class="horse-2">
+                <img src="../images/Kono.jpg" alt="Kono (ID)" class="kono" id="kono"></img>
+                <h4 class="horse-name"><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9813206&registry=Q&rbt=QH" target="_blank">Kono (ID)</a></h4><br>
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+                <p class="horse-info">Idaho bred Mare by Dashair out of Italian Princess by Blushing Bug.<br><br> 
+                    In 22 starts Kono earned 5 wins, 3 second place finishes, and 5 third place finishes. 
+                    Earning <strong>$34,296</strong> in her career.<br>
+                    <br><strong>Career Highlights</strong><br><br>
+                    Track Record Holder at 330 Yards at Elko County Fair.<br><br>
+                    2<sup>nd</sup> in Elko County Fair Derby 2017.<br><br>
+                    5<sup>th</sup> in AQHA Distaff Challenge Championship (Gr. 1) 2018.<br><br>
+                    2 Wins at Los Alamitos Race Track.
+                </p>
+            </div>
+            <div class="horse-2">
+                <img src="../images/Pendelton.jfif" alt="Pendelton (UT)" class="pendelton" id="pendelton"></img>
+                <h4 class="horse-name"><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10797031&registry=Q" target="_blank">Pendelton (UT)</a></h4><br>
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+                <p class="horse-info">Utah bred Mare by EC Jet One out of Princess Duma by Panther Mountain.<br> In 13 starts Pendleton earned 3 wins, 2 second place finishes, and 3 third place finishes.
+                    Earning <strong>$15,847</strong> in her career.<br>
+                    <br><strong>Career Highlights</strong><br><br>
+                    1<sup>st</sup> in Crush The Curve Futurity Consolation 2021. <br><br>
+                    2<sup>nd</sup> fastest qualifier for Wyoming Downs Derby 2022. <br><br>
+                    Fastest Qualifier for Elko County Fair Derby 2022.
+                </p>
             </div>
         </div>
-        <footer style="position: absolute; top: 100%; width: 100%; text-align: center;"> <small>&copy; Copyright <script>document.write(new Date().getFullYear());</script>, Win The Day Racing</small> </footer>   
-        <script src="../index.js"></script>
+        <footer> <small>&copy; Copyright <script>document.write(new Date().getFullYear());</script>, Win The Day Racing</small> </footer>   
+        <script src="../mares.js"></script>
     </body>
 </html>

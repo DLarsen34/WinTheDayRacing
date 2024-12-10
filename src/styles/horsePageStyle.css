@@ -6,6 +6,7 @@ body {
     padding: 0px;
     display: flex;
     flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
 }
 .filler {
     width: 25%;
@@ -49,21 +50,23 @@ nav {
 h1 {
     text-align: center;
     font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 40px;
+    font-size: 48px;
 }
 
 h2 {
     font-family: Brush Script MT, Brush Script Std, cursive;
     padding-left: 10px;
     margin-top: 4px;
-    font-size: 30px;
+    font-size: 40px;
     width: 100%;
     height: 12px;
+    text-align: center;
 }
 
 .horse-name {
     text-align: center;
     margin: 5px 0 5px 0;
+    font-size: 20px;
 }
 
 .list-header {
@@ -91,11 +94,6 @@ h2 {
     width: 500px;
     margin-top: -15px;
     height: 700px;
-}
-
-ul {
-    columns: 2;
-    list-style-type: square;
 }
 
 li {
@@ -165,6 +163,7 @@ img {
     text-align: center;
     margin-top: -5px;
     margin-bottom: 2px;
+    font-size: 16px;
 }
 
 .horse-info3 {
@@ -177,12 +176,34 @@ img {
 .page-info {
     font-size: 22px;
 }
+  
+  /* 100% Image Width on Smaller Screens */
+  @media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+  }
 
-#kono, #italianPrincess, #coko,
-#pendelton, #italianWaves, #slamDiego {
-    border-radius: 5px;
-    cursor: pointer;
-    transition: .3s;
+/*@media (max-width: 800px) {
+    .content{
+        flex-direction: column;
+        <h2>Mares</h2></br>
+}*/
+
+.divider {
+    color: #D2B48C;
+    height: 50px;
+    width: 100%;
+}
+
+.kono, .pendelton, .coko,
+.konosGoneRogue, .cokoPebbles, .slamDiego,
+.chief, .wtdNotInterested, .wtdItalianPrincess,
+.cbDocsBellaTerra{
+  height: 200px;
+  width: 300px;
+  border-radius: 10px;
+  padding-top: 0px;
 }
 
 .modal {
@@ -197,7 +218,6 @@ img {
     overflow: auto; /*Enable scroll if needed*/
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,.9);
-
 }
 
 /*Modal Content (Image)*/
@@ -248,25 +268,12 @@ img {
     text-decoration: none;
     cursor: pointer;
   }
-  
-  /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
-    .modal-content {
-      width: 100%;
-    }
+
+  #coko, #kono, #pendelton, #cbDocsBellaTerra,
+  #konosGoneRogue, #slamDiego, #wtdItalianPrincess,
+  #wtdNotInterested, #chief {
+    cursor: pointer;
   }
-
-/*@media (max-width: 800px) {
-    .content{
-        flex-direction: column;
-        <h2>Mares</h2></br>
-}*/
-
-.divider {
-    color: #D2B48C;
-    height: 50px;
-    width: 100%;
-}
 
 footer {
     position: relative;

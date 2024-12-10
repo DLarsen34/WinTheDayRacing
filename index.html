@@ -4,24 +4,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/56071c1e08.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="src/styles.css" />
+        <link rel="stylesheet" href="src/styles/styles.css" />
         <title>Win The Day Racing</title>
     </head>
     <body> 
-        <nav>
+        <nav id="nav-bar">
             <div class= "filler"></div>
-            <header>
-                <h1>Win The Day</br>Racing</h1>
-            </header>
             <ul class="nav-bar" id = "nav-list">
                 <li><a href = "index.html" class="active">Home</a></li>
                 <li><a href = "src/pages/mares.html">Brood Mares</a></li>
-                <li><a href = "src/pages/raceHorses.html">Race Bred Horses</a></li>
+                <li><a href = "raceHorses.html">Racing Age</a></li>
+                <li><a href = "src/pages/yearlingsAndWeanlings.html">Yearlings & Weanlings</a></li>
             </ul>
         </nav>
+        <header>
+            <h1>Win The Day</br>Racing</h1>
+        </header>
         <div class="main-container">
             <div class="pictures">
-                    <img id="kono" src="src/images/horse1.jfif" alt="Kono (ID)"></img>
+                    <img id="kono" class="kono" src="src/images/Kono.jpg" alt="Kono (ID)"></img>
                     <h3 class="horse-name">Kono (ID)</h3>
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
@@ -33,7 +34,7 @@
                         <div id="caption"></div>
                     </div>
 
-                    <img id="pendelton" src="src/images/horse1.jfif" alt="Pendelton (UT)"></img>
+                    <img id="pendelton" class="pendelton" src="src/images/Pendelton.jfif" alt="Pendelton (UT)"></img>
                     <h3 class="horse-name">Pendelton (UT)</h3>
                     <!-- The Modal -->
                     <div id="myModal" class="modal">
@@ -44,21 +45,9 @@
                         <!-- Modal Caption (Image Text) -->
                         <div id="caption"></div>
                     </div>
-
-                    <img id="coko" src="src/images/horse1.jfif" alt="Coko (UT)"></img>
-                    <h3 class="horse-name">Coko (UT)</h3>
-                     <!-- The Modal -->
-                     <div id="myModal" class="modal">
-                        <!-- The Close Button -->
-                        <span class="close">&times;</span>
-                        <!-- Modal Content (The Image) -->
-                        <img class="modal-content" id="img01">
-                        <!-- Modal Caption (Image Text) -->
-                        <div id="caption"></div>
-                    </div>
             </div>
             <div class="companyInfo">
-                <p class="page-info">Win the Day Racing founed by life long horse owner and trainer Matt Larsen and his wife Promise Larsen in 2019. Win the Day Racing located in Honeyville, Utah has 
+                <p class="page-info">Win the Day Racing was founed by life long horse owner and trainer Matt Larsen and his wife Promise Larsen in 2019. Win the Day Racing is located in Honeyville, Utah and has 
                     a rich history of breeding, training, and racing quarter horses in Utah, Idaho, Wyoming, Nevada, and California. Win the Day Racing is home to multiple race winning mares and geldings, with more on the way.
                     Contact us at: <u><em><a href="mailto:winthedayracing@gmail.com?subject=I'm interested in one of your horses!">winthedayracing@gmail.com</a></em></u>
                     <h3 class="list-header">Win the Day Racing's Top Horses
@@ -76,17 +65,33 @@
                         <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=9316881&registry=Q" target="_blank">Shootin Sixes</a></li>
                         <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7312132&registry=Q" target="_blank">Stormabash</a></li>
                         <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=4167487&registry=Q&rbt=QH" target="_blank">Streakin Chloe</a></li>
-                        <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=6141129&registry=Q&rbt=QH" target="_blank">Italian Princess</a></li>
+                        <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=11131640&registry=Q&rbt=QH" target="_blank">Slam Diego</a></li>
                     </ul>
                 </p>
             </div>
             <div class="pictures">
-                <img id="bambam" src="src/images/horse1.jfif" alt="Konos Gone Rogue (WY)"></img>
+                <img id="konosGoneRogue" class="konosGoneRogue" src="src/images/KonosGoneRogue.jpg" alt="Konos Gone Rogue (WY)"></img>
                 <h3 class="horse-name">Konos Gone Rogue (WY)</h3>
-                <img id="pebbles" src="src/images/horse1.jfif" alt="Coko Pebbles (WY)"></img>
+                <!-- The Modal-->
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
+                <img id="cokoPebbles" class="cokoPebbles" src="src/images/CokoPebbles.jpg" alt="Coko Pebbles (WY)"></img>
                 <h3 class="horse-name">Coko Pebbles (WY)</h3>
-                <img id="slamDiego" src="src/images/horse1.jfif" alt="Slam Diego (UT)"></img>
-                <h3 class="horse-name">Slam Diego (UT)</h3>
+                <!-- The Modal-->
+                <div id="myModal" class="modal">
+                    <!-- The Close Button -->
+                    <span class="close">&times;</span>
+                    <!-- Modal Content (The Image) -->
+                    <img class="modal-content" id="img01">
+                    <!-- Modal Caption (Image Text) -->
+                    <div id="caption"></div>
+                </div>
             </div>
         </div>
         <footer> <small>&copy; Copyright <script>document.write(new Date().getFullYear());</script>, Win The Day Racing</small> </footer>   
