@@ -72,3 +72,16 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() {
   modal.style.display = "none";
 }
+
+//Side Bar Show Function
+var menu = document.getElementById('menu');
+const sideBar = document.querySelector('.sidebar');
+menu.onclick = function(){
+  sideBar.style.display = 'flex';
+}
+
+//Side Bar Disappear
+var close = document.getElementById('close');
+close.onclick = function(){
+  sideBar.style.display = 'none';
+}

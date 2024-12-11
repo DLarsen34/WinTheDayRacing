@@ -8,13 +8,20 @@
         <title>Win The Day Racing</title>
     </head>
     <body> 
-        <nav id="nav-bar">
-            <div class= "filler"></div>
-            <ul class="nav-bar" id = "nav-list">
+        <nav>
+            <ul class="sidebar">
+                <li id="close"><a href = "index.html"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="230px" fill="#A52A2A"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                 <li><a href = "index.html" class="active">Home</a></li>
                 <li><a href = "src/pages/mares.html">Brood Mares</a></li>
                 <li><a href = "raceHorses.html">Racing Age</a></li>
                 <li><a href = "src/pages/yearlingsAndWeanlings.html">Yearlings & Weanlings</a></li>
+            </ul>
+            <ul class="desktopLinks">
+                <li class="hideOnMobile"><a href = "index.html" class="active">Home</a></li>
+                <li class="hideOnMobile"><a href = "src/pages/mares.html">Brood Mares</a></li>
+                <li class="hideOnMobile"><a href = "raceHorses.html">Racing Age</a></li>
+                <li class="hideOnMobile"><a href = "src/pages/yearlingsAndWeanlings.html">Yearlings & Weanlings</a></li>
+                <li class="menuButton" id="menu"><a href = "#"><svg xmlns="http://www.w3.org/2000/svg" height="34px" viewBox="0 -960 960 960" width="34px" fill="#A52A2A"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
             </ul>
         </nav>
         <header>
@@ -53,7 +60,7 @@
                     <h3 class="list-header">Win the Day Racing's Top Horses
                         <p class="list-subheader">Past & Present</p>
                     </h3>
-                    <ul>
+                    <ul class="topPerformers">
                         <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=10252381&registry=Q" target="_blank">Crown Apple</a></li>
                         <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=7566801&registry=Q" target="_blank">Go Melvin Go</a></li>
                         <li><a href="https://www.equibase.com/profiles/Results.cfm?type=Horse&refno=6141129&registry=Q&rbt=QH" target="_blank">Italian Princess</a></li>

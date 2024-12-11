@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: #D2B48C;
+    min-height: 100vh;
     width: 100%;
     height: 100%;
     margin: 0px;
@@ -7,9 +12,6 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Courier New', Courier, monospace;
-}
-.filler {
-    width: 25%;
 }
 
 header {
@@ -27,24 +29,56 @@ nav {
     background-color: #c49c67;
 }
 
-.nav-bar {
+nav ul {
+    width: 100%;
+    list-style: none;
     display: flex;
     justify-content: flex-end;
-    list-style-type: none;
+    align-items: center;
     text-transform: uppercase;
     font-family: Brush Script MT, Brush Script Std, cursive;
-    font-size: 12px;
 }
 
-.nav-bar li {
-    margin: 0;
-    padding: 10px 10px;
+nav li {
+    height: 50px;
     background-color: transparent;
 }
 
-.nav-bar li>a {
+nav a {
+    height: 100%;
+    padding: 0 30px;
     text-decoration: none;
     font-weight: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    z-index: 999;
+    background-color: rgba(196, 156, 103, 0.8);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 -10px rgba(0,0,0,.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    width: 100%;
+}
+
+.menuButton {
+    display: none;
 }
 
 h1 {
@@ -68,12 +102,11 @@ h2 {
 }
 
 .list-header {
-    padding-left: 90px;
+    text-align: center;
 }
 
 .list-subheader {
-    margin: 0;
-    padding-left: 70px;
+    text-align: center;
 }
 
 .main-container {
@@ -92,6 +125,9 @@ h2 {
     width: 500px;
     margin-top: -15px;
     height: 700px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 ul {
@@ -128,9 +164,16 @@ a.active {
     flex-wrap: wrap;
     flex-direction: row
 }
+.topPerformers {
+    list-style: none;
+    text-align: center;
+}
 
 img {
     padding-top: 8px;
+    margin-left: 12px;
+    margin-right: 12px;
+    flex-shrink: 4;
 }
 
 .horse-2 {
@@ -167,6 +210,7 @@ img {
 
 .page-info {
     font-size: 22px;
+    padding-top: 18px;
 }
 
 #kono, #pendelton, #coko, #konosGoneRogue, 
@@ -241,12 +285,13 @@ img {
 
   .kono, .pendelton, .coko,
   .konosGoneRogue, .cokoPebbles, .slamDiego {
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
   }
 
-@media (max-width: 768px) {
-    img {
+  @media (max-width: 1023px) {
+    .kono, .pendelton, 
+    .konosGoneRogue, .cokoPebbles  {
         display: none;
     }
 
@@ -254,13 +299,32 @@ img {
         display: none;
     }
 
-    .nav-bar {
-        
+}
+
+@media (max-width: 800px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menuButton {
+        display: block;
     }
 }
 
+@media (max-width: 400px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1600px) {
+    body {
+        text-align: center;
+    }
+}
 footer {
-    position: relative;
+    position: fixed;
     width: 100%;
+    top: 98vh;
     text-align: center;
+    display: none;
 }
